@@ -145,7 +145,7 @@ if [[ $CF_DOMAIN == "XIP" ]]; then
   CF_DOMAIN="${CF_IP}.xip.io"
 fi
 
-curl -sOL https://github.com/cloudfoundry-incubator/spiff/releases/download/v1.0.3/spiff_linux_amd64.zip
+curl -sOL https://github.com/cloudfoundry-incubator/spiff/releases/download/v1.0.4/spiff_linux_amd64.zip
 unzip spiff_linux_amd64.zip
 sudo mv ./spiff /usr/local/bin/spiff
 rm spiff_linux_amd64.zip

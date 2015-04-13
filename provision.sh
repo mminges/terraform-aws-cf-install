@@ -132,7 +132,7 @@ popd
 # There is a specific branch of cf-boshworkspace that we use for terraform. This
 # may change in the future if we come up with a better way to handle maintaining
 # configs in a git repo
-git clone --branch  ${CF_BOSHWORKSPACE_VERSION} http://github.com/cloudfoundry-community/cf-boshworkspace
+git clone --branch  ${CF_BOSHWORKSPACE_VERSION} https://github.com/mminges/cf-boshworkspace.git
 pushd cf-boshworkspace
 mkdir -p ssh
 

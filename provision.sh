@@ -29,7 +29,7 @@ DOCKER_SUBNET=${20}
 INSTALL_DOCKER=${21}
 
 boshDirectorHost="${IPMASK}.1.4"
-cfReleaseVersion="206"
+cfReleaseVersion="205"
 cfStemcell="light-bosh-stemcell-2778-aws-xen-ubuntu-trusty-go_agent.tgz"
 
 cd $HOME
@@ -72,9 +72,9 @@ esac
 
 # Install BOSH CLI, bosh-bootstrap, spiff and other helpful plugins/tools
 gem install git -v 1.2.7  #1.2.9.1 is not backwards compatible
-gem install bosh_cli -v 1.2915.0 --no-ri --no-rdoc --quiet
-gem install bosh_cli_plugin_micro -v 1.2915.0 --no-ri --no-rdoc --quiet
-gem install bosh_cli_plugin_aws -v 1.2915.0 --no-ri --no-rdoc --quiet
+gem install bosh_cli -v 1.2891.0 --no-ri --no-rdoc --quiet
+gem install bosh_cli_plugin_micro -v 1.2891.0 --no-ri --no-rdoc --quiet
+gem install bosh_cli_plugin_aws -v 1.2891.0 --no-ri --no-rdoc --quiet
 gem install bosh-bootstrap bosh-workspace --no-ri --no-rdoc --quiet
 
 
@@ -145,7 +145,7 @@ if [[ $CF_DOMAIN == "XIP" ]]; then
   CF_DOMAIN="${CF_IP}.xip.io"
 fi
 
-curl -sOL https://github.com/cloudfoundry-incubator/spiff/releases/download/v1.0.4/spiff_linux_amd64.zip
+curl -sOL https://github.com/cloudfoundry-incubator/spiff/releases/download/v1.0.3/spiff_linux_amd64.zip
 unzip spiff_linux_amd64.zip
 sudo mv ./spiff /usr/local/bin/spiff
 rm spiff_linux_amd64.zip

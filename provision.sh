@@ -29,7 +29,7 @@ DOCKER_SUBNET=${20}
 INSTALL_DOCKER=${21}
 
 boshDirectorHost="${IPMASK}.1.4"
-cfReleaseVersion="205"
+cfReleaseVersion="206"
 cfStemcell="light-bosh-stemcell-2778-aws-xen-ubuntu-trusty-go_agent.tgz"
 
 cd $HOME
